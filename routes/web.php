@@ -13,4 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'BookAuthorsController@index');
+Route::get('/book', 'BookController@index');
+Route::get('/book/create', 'BookController@create');
