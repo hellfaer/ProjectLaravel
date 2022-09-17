@@ -7,12 +7,10 @@ use App\Models\BookAuthor;
 
 class BookController extends Controller
 {
-    public function index() {
+    public function index() 
+    {
         $BookAuthors = BookAuthor::all();
-        foreach ($BookAuthors as $BookAuthor) {
-            dump($BookAuthor->the_author);
-        }
-        dd('end');
+        return view('BookAuthor', compact('BookAuthors'));
     }
 
 
