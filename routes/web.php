@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/book', 'BookController@index');
 Route::get('/book/create', 'BookController@create');
+
+Route::post('/post', 'BookController@store')->name('post.store');
